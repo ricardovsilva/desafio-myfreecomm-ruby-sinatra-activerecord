@@ -12,27 +12,27 @@
 
 ActiveRecord::Schema.define(version: 20180103145355) do
 
-  create_table "customer", force: :cascade do |t|
+  create_table "customers", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "merchant", force: :cascade do |t|
+  create_table "merchants", force: :cascade do |t|
     t.string "name"
     t.string "address"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "product", force: :cascade do |t|
+  create_table "products", force: :cascade do |t|
     t.string "description"
     t.decimal "price", precision: 8, scale: 2
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "purchase", force: :cascade do |t|
+  create_table "purchases", force: :cascade do |t|
     t.integer "customer_id"
     t.integer "product_id"
     t.integer "merchant_id"

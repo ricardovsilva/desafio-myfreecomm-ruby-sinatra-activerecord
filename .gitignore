@@ -51,3 +51,6 @@ build-iPhoneSimulator/
 
 # database
 *.sqlite3
+
+# byebug
+.byebug_history

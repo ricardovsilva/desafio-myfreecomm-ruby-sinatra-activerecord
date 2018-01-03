@@ -3,8 +3,8 @@
   <title>Calculadora de Receita Bruta</title>
 </head>
 <body>
-  <form action="/purchases" method="post">
-    <input type="file" required><br/>
+  <form action="/purchase" method="post" enctype="multipart/form-data">
+    <input type="file" name="arquivo" required><br/>
     <button>Enviar Arquivo</button>
   </form>
 </body>

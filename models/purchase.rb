@@ -1,3 +1,5 @@
 class Purchase < ActiveRecord::Base
-  has_one :customer, :item, :merchant
+  belongs_to :customer
+  belongs_to :product
+  belongs_to :merchant
 end
