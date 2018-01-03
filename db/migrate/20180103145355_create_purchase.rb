@@ -1,6 +1,6 @@
 class CreatePurchase < ActiveRecord::Migration[5.1]
   def change
-    create_table :purchase do |t|
+    create_table :purchases do |t|
       t.integer :customer_id, :product_id, :merchant_id
       t.integer :quantity
       t.timestamps null: false
