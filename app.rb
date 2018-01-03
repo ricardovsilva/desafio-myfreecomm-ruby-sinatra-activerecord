@@ -7,10 +7,10 @@ get '/' do
   erb :index
 end
 
-get '/purchases' do
-  
+get '/purchase' do
+
 end
 
-post '/purchases' do
+post '/purchase' do
 
 end
